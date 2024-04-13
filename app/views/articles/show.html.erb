@@ -8,5 +8,5 @@
 <p><strong>Description: </strong><%= @article.description %></p>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Return to articles listing', articles_path %> |
-<%= button_to 'Delete Article', article_path(@article), method: :delete, onclick: "return confirm('Are you sure you want to delete this article?');"  %>
+<%= link_to 'Return to articles listing', articles_path %> 
+<p><%= button_to 'Delete Article', article_path(@article), method: :delete, onclick: "return confirm('Are you sure you want to delete this article?');"  %> </p>
